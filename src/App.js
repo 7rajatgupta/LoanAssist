@@ -22,9 +22,9 @@ function App() {
         <div className="App">
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/generate" component={Generate} />
-            <Route path="/NotFound" component={NotFound} />
+            <Route path="/about" exact component={About} />
+            <Route path="/generate" exact component={Generate} />
+            <Route path="/NotFound" exact component={NotFound} />
             <Redirect to="/NotFound" />
           </Switch>
         </div>
