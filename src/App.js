@@ -24,8 +24,8 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />
             <Route path="/generate" component={Generate} />
-            <Route path="/404" component={NotFound} />
-            <Redirect to="/404" />
+            <Route path="/NotFound" component={NotFound} />
+            <Redirect to="/NotFound" />
           </Switch>
         </div>
       </Router>
