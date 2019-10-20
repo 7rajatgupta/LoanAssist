@@ -2,13 +2,11 @@
   list-style: none;
   padding: 2px;
   margin-top: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-a {
+li {
   color: white;
+  margin-right: 10px;
 }
-a:hover {
+li:hover {
   color: red;
 }

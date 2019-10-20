@@ -15,20 +15,20 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <div>
-        <Nav />
-      </div>
-      <div className="App">
-        <Router>
+      <Router>
+        <div>
+          <Nav />
+        </div>
+        <div className="App">
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/about" exact component={About} />
-            <Route path="/generate" exact component={Generate} />
+            <Route path="/about" component={About} />
+            <Route path="/generate" component={Generate} />
             <Route path="/404" component={NotFound} />
             <Redirect to="/404" />
           </Switch>
-        </Router>
-      </div>
+        </div>
+      </Router>
     </div>
   );
 }

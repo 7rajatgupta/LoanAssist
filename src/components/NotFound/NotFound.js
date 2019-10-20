@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import NotFoundImg from "../static/img/NotFound.gif";
 
 const NotFound = () => {
@@ -8,9 +9,9 @@ const NotFound = () => {
         <img src={NotFoundImg} alt="404" />
       </div>
       <div className="container mt-5">
-        <a href="/" className="btn btn-secondary">
-          Guide me Home
-        </a>
+        <Link to="/">
+          <button className="btn btn-secondary">Guide me Home</button>
+        </Link>
       </div>
     </div>
   );
