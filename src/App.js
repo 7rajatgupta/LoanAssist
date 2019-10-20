@@ -25,7 +25,6 @@ function App() {
             <Route path="/about" component={About} />
             <Route path="/generate" component={Generate} />
             <Route path="/NotFound" component={NotFound} />
-            <Redirect to="/NotFound" />
           </Switch>
         </div>
       </Router>
