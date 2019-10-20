@@ -37,6 +37,7 @@ const Generate = () => {
       });
       const newSearch = { amount, duration };
       recentInput.push(newSearch);
+      localStorage.setItem("recentInputs", JSON.stringify(recentInput));
       setLoading(false);
     } else {
       setLoading(true);
@@ -47,10 +48,6 @@ const Generate = () => {
     setMessage("Choose Principal amount and desired period of duration.");
     setLoading(true);
   }, []);
-
-  useEffect(() => {
-    localStorage.setItem("recentInputs", JSON.stringify(recentInput));
-  }, [recentInput]);
 
   const getInfo = e => {
     e.preventDefault();
